@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <div className="bg-saffron text-white p-4 shadow-md flex flex-col items-center">
+    <div className="bg-primary text-white p-4 shadow-md flex flex-col items-center">
       
       <h1 className="text-2xl font-bold tracking-wide mb-2">
         📜 श्री रामचरितमानस

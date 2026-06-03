@@ -9,6 +9,7 @@ export default {
       colors:{
         
     primary: "#FF9933", // add this
+    secondary: "#138808",
     saffron: "#FF9933",
     temple: "#A0522D",
     scripture: "#FFF8E7",
