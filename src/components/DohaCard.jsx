@@ -1,7 +1,12 @@
-export default function DohaCard({doha,arth}) {
+import { useNavigate, useParams } from "react-router-dom";
 
+export default function DohaCard({id,doha,arth}) {
+const navigate=useNavigate();
+const {name}=useParams();
 return(
-    <div className="bg-white p-6 rounded-2xl shadow-md mb-6 border border-orange-100">
+    <div 
+    onClick={()=>navigate(`/kand/${name}/${id}`)}
+    className="bg-white p-6 rounded-2xl shadow-md mb-6 border border-orange-100">
     <p className="text-lg text-gray-800 font-medium leading-relaxed">
         {doha}
       </p>

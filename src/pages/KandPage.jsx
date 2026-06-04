@@ -20,7 +20,7 @@ export default function KandPage() {
             {dohas.length===0 ? (
                 <p className="text-center text-gray-600">No data available</p>
             ):(dohas.map((d)=>(
-                <DohaCard key={d.id} doha={d.doha} arth={d.arth} />
+                <DohaCard key={d.id} id={d.id} doha={d.doha} arth={d.arth} />
             )))}
             </div>
         </div>
