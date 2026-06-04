@@ -1,11 +1,11 @@
 import { useNavigate } from "react-router-dom";
 
-export default function KandCard( {name}){
+export default function KandCard( {name,keyName}){
  
     const navigate=useNavigate();
     return(
         <div 
-        onClick={()=>navigate(`/kand/${name}`)}
+        onClick={()=>navigate(`/kand/${keyName}`)}
         className="bg-white
         rounded-2xl
         shadow-md
