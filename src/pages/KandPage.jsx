@@ -1,6 +1,7 @@
 import {useParams} from "react-router-dom";
 import DohaCard from "../components/DohaCard";
 import ramayanData from "../data/ramayanData";
+import VerseCard from "../components/VerseCard";
 export default function KandPage() {
 
     const {name}=useParams();
@@ -20,7 +21,7 @@ export default function KandPage() {
             {dohas.length===0 ? (
                 <p className="text-center text-gray-600">No data available</p>
             ):(dohas.map((d)=>(
-                <DohaCard key={d.id} id={d.id} doha={d.doha} arth={d.arth} />
+                <VerseCard key={d.id} id={d.id} type={d.type} text={d.text} arth={d.arth} />
             )))}
             </div>
         </div>
