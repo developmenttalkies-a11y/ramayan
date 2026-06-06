@@ -1,4 +1,4 @@
-export default function VerseCard({text,type,arth }){
+export default function VerseCard({text,type,arth ,english}){
 
     const getTitle=()=>{
         switch(type){
@@ -6,8 +6,8 @@ export default function VerseCard({text,type,arth }){
       case "chaupai": return "चौपाई";
       case "chhand": return "छंद";
       case "shlok": return "श्लोक";
+      case "soratha" : return "सोरठा";
       default: return "";
-
         }
     };
 

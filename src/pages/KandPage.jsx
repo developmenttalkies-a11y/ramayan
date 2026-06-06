@@ -40,7 +40,7 @@ export default function KandPage() {
             {verses.length===0 ? (
                 <p className="text-center text-gray-600">No data available</p>
             ):(verses.map((d)=>(
-                <VerseCard key={d.id} id={d.id} type={d.type} text={d.text} arth={d.arth} />
+                <VerseCard key={d.id} id={d.id} type={d.type} text={d.text} arth={d.arth} english={d.english} />
             )))}
             </div>
         </div>
