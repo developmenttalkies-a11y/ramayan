@@ -22,7 +22,11 @@ export default function VerseCard({text,type,arth ,english}){
 
             <p className="text-lg leading-relaxed font-medium text-center"
             >
-                {text}
+                {Array.isArray(text) ? (text.map((line,index)=>(
+                   <p key={index}>{line}</p> 
+                ))) :(
+                    <p>{text}</p>
+                    )}
 
             </p>
 <div className="my-4 border-t"></div>
@@ -30,6 +34,12 @@ export default function VerseCard({text,type,arth ,english}){
 
             <p className="text-gray-700 leading-relaxed text-justify">
                 {arth}
+            </p>
+
+              {/* english */}
+
+            <p className="text-gray-700 leading-relaxed text-justify">
+                {english}
             </p>
 
         </div>

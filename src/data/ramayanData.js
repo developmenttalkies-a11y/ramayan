@@ -14,7 +14,8 @@ const ramayanData={
     {
       id: 1,
       type: "doha",
-      text: "श्रीगुरु चरण सरोज रज...",
+      text: ["श्रीगुरु चरण सरोज रज...",
+      "श्रीगुरु चरण सरोज रज..."],
       arth: "गुरु के चरणों की धूल से...",
       english:"This is english tranislation of id 1"
     },
